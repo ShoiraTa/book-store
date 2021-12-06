@@ -6,17 +6,21 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Categories from './components/Categories'
 
 ReactDOM.render(
-  <Router>
-    <header>
-      <Link to='/'> Bookstore</Link>
-      <Link to='/'>Books</Link>
-      <Link to='/categories'>Categories</Link>
-    </header>
-    <Routes>
-      <Route path='/' element={<App/>}/>
-      <Route path='/categories' element = {<Categories/>} />
-    </Routes>
+  <div className="container">
+    <Router>
+      <header>
+        <nav>
+          <Link className="logo" to='/'> Bookstore</Link>
+          <Link className="link" to='/'>Books</Link>
+          <Link className="link" to='/categories'>Categories</Link>
+        </nav>
+      </header>
+      <Routes>
+        <Route path='/' element={<App/>}/>
+        <Route path='/categories' element = {<Categories/>} />
+      </Routes>
 
-  </Router>,
+    </Router>
+  </div>,
   document.getElementById('root')
 );
