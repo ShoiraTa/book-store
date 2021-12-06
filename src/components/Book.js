@@ -1,17 +1,20 @@
-import React from 'react'
-import './Book.css'
+/* eslint-disable react/prop-types */
+import React from 'react';
+import './Book.css';
 
 function Book(props) {
-  const { aBook } = props
-  console.log(aBook)
+  const { aBook } = props;
   return (
-    <div className = "bookRow">
-      <div className='bookInfo'>
+    <div className="bookRow">
+      <div className="bookInfo">
         <p className="category">{aBook.category}</p>
-        <h1 className="title"> {aBook.title}</h1>
+        <h1 className="title">
+          {' '}
+          {aBook.title}
+        </h1>
         <p className="author">{aBook.author}</p>
       </div>
-      <div className ='actions'>
+      <div className="actions">
         <ul>
           <li>Comments</li>
           <li>Remove</li>
@@ -19,7 +22,7 @@ function Book(props) {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Book
+export default Book;

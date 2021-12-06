@@ -1,16 +1,17 @@
-import React from 'react'
-import './Form.css'
+import React from 'react';
+import './Form.css';
 
 function Form() {
-  return (  
+  return (
     <form>
-      <input className='bookInput' type="text" placeholder="Book title" />
-      <select className='bookSelect' name="category" placeholder="optiopn">
-      <option value="Fiction">Fiction</option>
-      <option  value="History">History</option>
+      <input className="bookInput" type="text" placeholder="Book title" />
+      <select className="bookSelect" name="category" placeholder="optiopn">
+        <option value="Fiction">Fiction</option>
+        <option value="History">History</option>
       </select>
       <input className="submit" type="submit" value="Add book" />
-    </form>  )
+    </form>
+  );
 }
 
-export default Form
+export default Form;

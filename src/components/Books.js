@@ -1,14 +1,14 @@
-import React from "react";
-import Book from "./Book";
-import Form from "./Form";
-import "./Books.css";
+import React from 'react';
+import Book from './Book';
+import Form from './Form';
+import './Books.css';
 
 const list = [
   {
-    title: "Some book",
+    title: 'Some book',
     id: 1,
-    author: "Someone",
-    category: "Fiction",
+    author: 'Someone',
+    category: 'Fiction',
   },
 ];
 
