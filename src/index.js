@@ -24,7 +24,6 @@ ReactDOM.render(
           <Route path="/" element={<App />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
-
       </Router>
     </div>
   </Provider>,

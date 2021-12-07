@@ -7,7 +7,7 @@
 .category,
 .title,
 .author {
-  margin: 0;
+  margin: 0.5rem 0;
   padding: 0 10px;
 }
 
@@ -28,7 +28,15 @@
 
 .actions ul li {
   padding: 0 10px;
+}
+
+.actions ul li button {
   color: #85b0d5;
+  background-color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
 }
 
 .actions ul li:not(:last-child) {

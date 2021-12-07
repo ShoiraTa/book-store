@@ -1,36 +1,15 @@
 import React from 'react';
 import './Books.css';
-// import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import Form from './Form';
-
-// import your Action Creators
-// import { addBook, removeBook } from './redux/books/books';
-
-// const dispatch = useDispatch();
-
-// const submitBookToStore = () => {
-//   const newBook = {
-//     title: 'Some book',
-//     id: 1,
-//     author: 'Someone',
-//     category: 'Fiction',
-//   };
-
-//   // dispatch an action and pass it the newBook object (your action's payload)
-//   dispatch(addBook(newBook));
-// };
-
-const list = [
-  {
-    title: 'Some book',
-    id: 1,
-    author: 'Someone',
-    category: 'Fiction',
-  },
-];
+// import { addBook } from '../redux/books/books';
 
 function Books() {
+  const books = useSelector((state) => state);
+
+  const list = books.reducer;
+
   return (
     <div className="booksContainer">
       {list.map((book) => (
