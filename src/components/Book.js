@@ -25,7 +25,11 @@ function Book({ singleBook }) {
 }
 
 Book.propTypes = {
-  singleBook: PropTypes.string.isRequired,
+  singleBook: PropTypes.shape({
+    title: PropTypes.string,
+    author: PropTypes.string,
+    category: PropTypes.string,
+  }).isRequired,
 };
 
 export default Book;
