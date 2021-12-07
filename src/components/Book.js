@@ -1,18 +1,17 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import './Book.css';
+import PropTypes from 'prop-types';
 
-function Book(props) {
-  const { aBook } = props;
+function Book({ singleBook }) {
   return (
     <div className="bookRow">
       <div className="bookInfo">
-        <p className="category">{aBook.category}</p>
+        <p className="category">{singleBook.category}</p>
         <h1 className="title">
           {' '}
-          {aBook.title}
+          {singleBook.title}
         </h1>
-        <p className="author">{aBook.author}</p>
+        <p className="author">{singleBook.author}</p>
       </div>
       <div className="actions">
         <ul>
@@ -24,5 +23,9 @@ function Book(props) {
     </div>
   );
 }
+
+Book.propTypes = {
+  singleBook: PropTypes.string.isRequired,
+};
 
 export default Book;

@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 - go to the directory that you want to clone the repository in.
 - right click and choose Git Bash here.
-- type "git clone https://github.com/ShoiraTa/Calculator.git".
+- type "git clone https://github.com/ShoiraTa/book-store.git".
 - run `npm install` to install all the dependencies
 - Run `npm start` to bundle the files in the src folder
 

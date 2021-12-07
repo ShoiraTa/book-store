@@ -16,7 +16,7 @@ function Books() {
   return (
     <div className="booksContainer">
       {list.map((book) => (
-        <Book aBook={book} key={book.id} />
+        <Book singleBook={book} key={book.id} />
       ))}
       <div className="formContainer">
         <h1>Add a new Book</h1>
